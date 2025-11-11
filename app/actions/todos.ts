@@ -1,6 +1,6 @@
 "use server";
 
-type Todo = {
+export type Todo = {
   id: string;
   title: string;
   completed: boolean;
@@ -15,6 +15,35 @@ let todos: Todo[] = [
 export async function getTodos() {
   await new Promise((resolve) => setTimeout(resolve, 500));
   return todos;
+}
+
+export async function getTodoById(id: string) {
+  await new Promise((resolve) => setTimeout(resolve, 500));
+  const todo = todos.find((todo) => todo.id === id);
+  if (!todo) {
+    console.log("Todo not found");
+    return null;
+  }
+  return todo;
+}
+
+export async function getTodoByIdAndConfig(
+  id: string,
+  { title, completed }: { title?: string; completed?: boolean }
+) {
+  await new Promise((resolve) => setTimeout(resolve, 500));
+  const todo = todos.find(
+    (todo) =>
+      todo.id === id &&
+      (title === undefined || todo.title === title) &&
+      (completed === undefined || todo.completed === completed)
+  );
+
+  if (!todo) {
+    console.log("Todo not found");
+    return null;
+  }
+  return todo;
 }
 
 export async function createTodo(title: string) {

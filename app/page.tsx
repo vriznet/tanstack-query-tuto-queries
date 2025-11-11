@@ -11,7 +11,10 @@ const Home = () => {
         <h1>Choose the page</h1>
         <ol>
           <li>
-            <Link href="/query-basics">Query Basics</Link>
+            <Link href="/contents/query-basics">Query Basics</Link>
+          </li>
+          <li>
+            <Link href="/contents/query-keys">Query Keys</Link>
           </li>
         </ol>
       </main>

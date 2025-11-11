@@ -1,7 +1,7 @@
 "use client";
 
 import { useQuery } from "@tanstack/react-query";
-import { getTodos } from "../actions/todos";
+import { getTodos } from "../../actions/todos";
 
 export default function QueryBasics() {
   const { status, fetchStatus, data, error } = useQuery({
