@@ -1,8 +1,10 @@
+import TanstackQueryProvider from "@/providers/TanstackQueryProvider";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Next.js Basic Template",
-  description: "This is a basic template for Next.js with TypeScript.",
+  title: "TanStack Query - Queries",
+  description:
+    "A playground codespace for TanStack Official Docs - Guides & Concepts - Queries",
 };
 
 export default function RootLayout({
@@ -12,7 +14,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="ko">
-      <body>{children}</body>
+      <body>
+        <TanstackQueryProvider>{children}</TanstackQueryProvider>
+      </body>
     </html>
   );
 }

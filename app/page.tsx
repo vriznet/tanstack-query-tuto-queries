@@ -1,14 +1,19 @@
 import Head from "next/head";
+import Link from "next/link";
 
 const Home = () => {
   return (
     <div>
       <Head>
-        <title>Next.js Basic Template</title>
+        <title>TanStack Query - Queries</title>
       </Head>
       <main>
-        <h1>Next.js Basic Template</h1>
-        <p>This is a basic template for Next.js with TypeScript.</p>
+        <h1>Choose the page</h1>
+        <ol>
+          <li>
+            <Link href="/query-basics">Query Basics</Link>
+          </li>
+        </ol>
       </main>
     </div>
   );
