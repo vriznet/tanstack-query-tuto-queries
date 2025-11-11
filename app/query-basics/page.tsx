@@ -4,15 +4,15 @@ import { useQuery } from "@tanstack/react-query";
 import { getTodos } from "../actions/todos";
 
 export default function QueryBasics() {
-  const { isPending, isError, data, error } = useQuery({
+  const { status, data, error } = useQuery({
     queryKey: ["todos"],
     queryFn: getTodos,
   });
 
-  if (isPending) {
+  if (status === "pending") {
     return <div>Loading...</div>;
   }
-  if (isError) {
+  if (status === "error") {
     return <div>Error: {error.message}</div>;
   }
   if (data) {
