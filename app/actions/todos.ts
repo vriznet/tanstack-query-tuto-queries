@@ -8,7 +8,7 @@ type Todo = {
 
 let todos: Todo[] = [
   { id: "1", title: "Learn TanStack Query", completed: false },
-  { id: "2", title: "Learn Server Actions", completed: false },
+  { id: "2", title: "Learn Server Actions", completed: true },
   { id: "3", title: "Build Amazing Apps", completed: false },
 ];
 
