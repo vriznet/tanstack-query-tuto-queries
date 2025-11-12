@@ -16,6 +16,9 @@ const Home = () => {
           <li>
             <Link href="/contents/query-keys">Query Keys</Link>
           </li>
+          <li>
+            <Link href="/contents/query-functions">Query Functions</Link>
+          </li>
         </ol>
       </main>
     </div>

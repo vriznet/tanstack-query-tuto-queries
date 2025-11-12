@@ -1,12 +1,14 @@
 "use client";
 
-import { getTodoByIdAndConfig } from "@/app/actions/todos";
+import { getTodoById } from "@/app/actions/todos";
 import { useQuery } from "@tanstack/react-query";
 
 export default function QueryKeys() {
+  const todoId = "3";
+
   const { status, error, data } = useQuery({
-    queryKey: ["todo", "3", { completed: false }],
-    queryFn: () => getTodoByIdAndConfig("3", { completed: false }),
+    queryKey: ["todo", todoId],
+    queryFn: ({ queryKey }) => getTodoById(queryKey[1]),
   });
 
   if (status === "pending") {
@@ -16,7 +18,6 @@ export default function QueryKeys() {
   if (status === "error") {
     return <div>Error: {error.message}</div>;
   }
-
   if (data) {
     return (
       <div>
