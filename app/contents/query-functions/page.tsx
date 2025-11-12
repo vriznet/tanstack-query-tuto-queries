@@ -8,7 +8,20 @@ export default function QueryKeys() {
 
   const { status, error, data } = useQuery({
     queryKey: ["todo", todoId],
-    queryFn: ({ queryKey }) => getTodoById(queryKey[1]),
+    // If the conditions that determine the query has failed are met, the query function must throw or return a rejected Promise.
+    queryFn: async () => {
+      const somethingGoesWrong = false; // Simulate error condition
+      const somethingElseGoesWrong = false; // Simulate another error condition
+
+      if (somethingGoesWrong) {
+        throw new Error("Oh no!");
+      }
+      if (somethingElseGoesWrong) {
+        return Promise.reject(new Error("Something else went wrong!"));
+      }
+
+      return getTodoById(todoId);
+    },
   });
 
   if (status === "pending") {
