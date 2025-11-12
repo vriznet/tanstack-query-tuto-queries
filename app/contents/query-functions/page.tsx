@@ -1,6 +1,5 @@
 "use client";
 
-import { getTodoById } from "@/app/actions/todos";
 import { useQuery } from "@tanstack/react-query";
 
 export default function QueryKeys() {
@@ -8,19 +7,13 @@ export default function QueryKeys() {
 
   const { status, error, data } = useQuery({
     queryKey: ["todo", todoId],
-    // If the conditions that determine the query has failed are met, the query function must throw or return a rejected Promise.
+    // Some utilities like `fetch` do not throw errors by default. If that's the case, you'll need to throw them on your own.
     queryFn: async () => {
-      const somethingGoesWrong = false; // Simulate error condition
-      const somethingElseGoesWrong = false; // Simulate another error condition
-
-      if (somethingGoesWrong) {
-        throw new Error("Oh no!");
+      const response = await fetch("/todos/" + todoId);
+      if (!response.ok) {
+        throw new Error("Network response was not ok");
       }
-      if (somethingElseGoesWrong) {
-        return Promise.reject(new Error("Something else went wrong!"));
-      }
-
-      return getTodoById(todoId);
+      return response.json();
     },
   });
 
