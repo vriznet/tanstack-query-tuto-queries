@@ -22,6 +22,9 @@ const Home = () => {
           <li>
             <Link href="/contents/query-options">Query Options</Link>
           </li>
+          <li>
+            <Link href="/contents/parallel-queries">Parallel Queries</Link>
+          </li>
         </ol>
       </main>
     </div>
