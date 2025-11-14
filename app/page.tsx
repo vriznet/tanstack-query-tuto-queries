@@ -25,6 +25,11 @@ const Home = () => {
           <li>
             <Link href="/contents/parallel-queries">Parallel Queries</Link>
           </li>
+          <li>
+            <Link href="/contents/dependent-queries-use-query">
+              Dependent Queries - useQuery
+            </Link>
+          </li>
         </ol>
       </main>
     </div>
