@@ -40,6 +40,12 @@ const Home = () => {
               Background Fetching Indicator - isFetching
             </Link>
           </li>
+          <li>
+            <Link href="/contents/background-fetching-indicator-use-is-fetching-for-global">
+              Background Fetching Indicator - useIsFetching for Global Loading
+              State
+            </Link>
+          </li>
         </ol>
       </main>
     </div>
