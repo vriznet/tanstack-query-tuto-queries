@@ -35,6 +35,11 @@ const Home = () => {
               Dependent Queries - useQueries
             </Link>
           </li>
+          <li>
+            <Link href="/contents/background-fetching-indicator-is-fetching">
+              Background Fetching Indicator - isFetching
+            </Link>
+          </li>
         </ol>
       </main>
     </div>
