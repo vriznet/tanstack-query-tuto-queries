@@ -56,6 +56,11 @@ const Home = () => {
               Disabling/Pausing Queries - Basics
             </Link>
           </li>
+          <li>
+            <Link href="/contents/disabling-pausing-queries-lazy-queries">
+              Disabling/Pausing Queries - Lazy Queries
+            </Link>
+          </li>
         </ol>
       </main>
     </div>

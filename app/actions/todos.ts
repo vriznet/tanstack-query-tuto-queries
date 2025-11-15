@@ -46,6 +46,14 @@ export async function getTodoByIdAndConfig(
   return todo;
 }
 
+export async function getTodosWithFilter(filter: string) {
+  await new Promise((resolve) => setTimeout(resolve, 500));
+  if (!filter) {
+    return todos;
+  }
+  return todos.filter((todo) => todo.title.includes(filter));
+}
+
 export async function createTodo(title: string) {
   if (!title || title.trim().length === 0) {
     throw new Error("Title is required");
