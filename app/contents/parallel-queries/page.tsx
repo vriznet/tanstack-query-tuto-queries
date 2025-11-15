@@ -30,7 +30,12 @@ export default function ParallelQueries() {
         if (result.data) {
           return (
             <div key={index}>
-              <input type="checkbox" checked={result.data.completed} readOnly />
+              <input
+                type="checkbox"
+                checked={result.data.completed}
+                disabled
+                readOnly
+              />
               {result.data.title}
             </div>
           );

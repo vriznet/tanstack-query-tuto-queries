@@ -30,7 +30,7 @@ export default function BackgroundFetchingIndicator() {
         {isFetching && <div>🔄 Refreshing...</div>}
         {todos?.map((todo) => (
           <div key={todo.id}>
-            <input type="checkbox" checked={todo.completed} readOnly />
+            <input type="checkbox" checked={todo.completed} disabled readOnly />
             {todo.title}
           </div>
         ))}

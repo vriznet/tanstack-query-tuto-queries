@@ -37,7 +37,7 @@ export default function BackgroundFetchingIndicator() {
         ) : null}
         {todos?.map((todo) => (
           <div key={todo.id}>
-            <input type="checkbox" checked={todo.completed} readOnly />
+            <input type="checkbox" checked={todo.completed} disabled readOnly />
             {todo.title}
           </div>
         ))}

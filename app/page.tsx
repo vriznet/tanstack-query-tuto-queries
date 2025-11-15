@@ -46,6 +46,11 @@ const Home = () => {
               State
             </Link>
           </li>
+          <li>
+            <Link href="/contents/window-focus-refetching">
+              Window Focus Refetching
+            </Link>
+          </li>
         </ol>
       </main>
     </div>

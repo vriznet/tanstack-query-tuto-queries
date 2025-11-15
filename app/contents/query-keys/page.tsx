@@ -22,7 +22,7 @@ export default function QueryKeys() {
       <div>
         <h2>Todo Detail</h2>
         <div>
-          <input type="checkbox" checked={data.completed} readOnly />
+          <input type="checkbox" checked={data.completed} disabled readOnly />
           {data.title}
         </div>
       </div>

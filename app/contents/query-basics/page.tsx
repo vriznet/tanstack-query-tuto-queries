@@ -26,7 +26,7 @@ export default function QueryBasics() {
       <ul>
         {data.map((todo) => (
           <li key={todo.id}>
-            <input type="checkbox" checked={todo.completed} readOnly />
+            <input type="checkbox" checked={todo.completed} disabled readOnly />
             {todo.title}
           </li>
         ))}
