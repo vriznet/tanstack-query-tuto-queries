@@ -30,6 +30,11 @@ const Home = () => {
               Dependent Queries - useQuery
             </Link>
           </li>
+          <li>
+            <Link href="/contents/dependent-queries-use-queries">
+              Dependent Queries - useQueries
+            </Link>
+          </li>
         </ol>
       </main>
     </div>
