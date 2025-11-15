@@ -51,6 +51,11 @@ const Home = () => {
               Window Focus Refetching
             </Link>
           </li>
+          <li>
+            <Link href="/contents/disabling-pausing-queries-basics">
+              Disabling/Pausing Queries - Basics
+            </Link>
+          </li>
         </ol>
       </main>
     </div>
