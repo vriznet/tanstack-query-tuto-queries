@@ -66,6 +66,16 @@ const Home = () => {
               Disabling/Pausing Queries - Typesafe Disabling
             </Link>
           </li>
+          <li>
+            <Link href="/contents/query-retries-basics">
+              Query Retries - Basics
+            </Link>
+          </li>
+          <li>
+            <Link href="/contents/query-retries-background-retry">
+              Query Retries - Background Retry
+            </Link>
+          </li>
         </ol>
       </main>
     </div>
