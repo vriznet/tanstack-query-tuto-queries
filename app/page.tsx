@@ -79,6 +79,9 @@ const Home = () => {
           <li>
             <Link href="/contents/paginated-queries">Paginated Queries</Link>
           </li>
+          <li>
+            <Link href="/contents/infinite-queries">Infinite Queries</Link>
+          </li>
         </ol>
       </main>
     </div>
