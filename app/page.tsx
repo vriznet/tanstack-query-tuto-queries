@@ -76,6 +76,9 @@ const Home = () => {
               Query Retries - Background Retry
             </Link>
           </li>
+          <li>
+            <Link href="/contents/paginated-queries">Paginated Queries</Link>
+          </li>
         </ol>
       </main>
     </div>
