@@ -87,6 +87,11 @@ const Home = () => {
               Initial Query Data - Basics
             </Link>
           </li>
+          <li>
+            <Link href="/contents/initial-query-data-from-cache">
+              Initial Query Data - From Cache
+            </Link>
+          </li>
         </ol>
       </main>
     </div>
