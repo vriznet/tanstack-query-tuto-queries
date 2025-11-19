@@ -82,6 +82,11 @@ const Home = () => {
           <li>
             <Link href="/contents/infinite-queries">Infinite Queries</Link>
           </li>
+          <li>
+            <Link href="/contents/initial-query-data-basics">
+              Initial Query Data - Basics
+            </Link>
+          </li>
         </ol>
       </main>
     </div>
