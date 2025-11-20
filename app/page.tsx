@@ -97,6 +97,11 @@ const Home = () => {
               Placeholder Data - Basics
             </Link>
           </li>
+          <li>
+            <Link href="/contents/placeholder-data-memoization">
+              Placeholder Data - Memoization
+            </Link>
+          </li>
         </ol>
       </main>
     </div>
