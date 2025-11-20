@@ -92,6 +92,11 @@ const Home = () => {
               Initial Query Data - From Cache
             </Link>
           </li>
+          <li>
+            <Link href="/contents/placeholder-data-basics">
+              Placeholder Data - Basics
+            </Link>
+          </li>
         </ol>
       </main>
     </div>
